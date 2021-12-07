@@ -1,10 +1,12 @@
 /* ======= Menu Show Y Hidden ====== */
-const navMenu = document.getElementById('nav-menu'),
-    navToggle = document,getElementById('nav-toggle'),
+const 
+    navMenu = document.getElementById('nav-menu'),
+    navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
-/* ======= Menu Show ====== */
+
+    /* ======= Menu Show ====== */
 if(navToggle){
-    navToggle.addEventListener('click', ()=> {
+    navToggle.addEventListener('click', () =>{
         navMenu.classList.add('show-menu')
     })
 }
@@ -37,11 +39,11 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll('section[id]')
+// const sections = document.querySelectorAll('section[id]')
 
-function scrollActive(){
-    const scrollY = window.pageYOffset
-}
+// function scrollActive(){
+//     const scrollY = window.pageYOffset
+// }
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
 

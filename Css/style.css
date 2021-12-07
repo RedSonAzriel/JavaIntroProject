@@ -7,7 +7,7 @@
 
     /*=================== Colors ===================*/
     /* Change favorite color */
-    --hue-color: 67;
+    --hue-color: 205;
 
     /* HSL Color Mode */
     --first-color: hsl(VAR(--hue-color), 69%, 61%);
@@ -180,8 +180,8 @@ img{
     .nav__menu{
         position: fixed;
         bottom: -100%;
-        left: 0;
-        width: 100px;
+        left: 15%;
+        width: fit-content;
         background-color: var(--body-color);
         padding: 2rem 1.5rem 4rem;
         box-shadow: 0 -1px 4px rgba(0,0,0,.15);
@@ -225,7 +225,7 @@ img{
     color: var(--first-color);
 }
 /* ======= Show menu ====== */
-.show-menu{
+.show-menu {
     bottom: 0; 
 }
 /* ======= Active Link ====== */
@@ -263,12 +263,12 @@ img{
 }
 
 .home__blob{
-    width: 200px;
+    width: 330px;
     fill: var(--first-color);
 }
 
 .home__blob-img{
-    width: 170px;
+    width: 210px;
 }
 
 .home__data{
@@ -314,14 +314,76 @@ img{
     margin-right: var(--mb-0-25);
 }
 
-.home
+.home__scroll-arrow{
+    font-size: 1.25rem;
+}
 
 /*==================== BUTTONS ====================*/
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+}
+
+.button:hover{
+    background-color: var(--first-color-alt);
+}
+
+.button__icon{
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+    transition: .3s;
+}
+
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+}
 
 
 /*==================== ABOUT ====================*/
+.about__img{
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
 
+.about__description{
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
 
+.about__info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about__info-title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+.about__info-name{
+    font-size: var(--smaller-font-size);
+}
+
+.about__info-title,
+.about__info-name{
+    display: block;
+    text-align: center;
+}
+
+.about__buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.about
 /*==================== SKILLS ====================*/
 
 
